@@ -56,6 +56,8 @@ $PHP_PATH $COMPOSER clear-cache
 # ===============================
 echo "====> Installing ConnectPOS $SPOS_API_VERSION"
 
+$PHP_PATH -d memory_limit=$MEMORY_LIMIT $COMPOSER remove connectpos/* --ignore-platform-reqs
+
 $PHP_PATH -d memory_limit=$MEMORY_LIMIT $COMPOSER require \
   connectpos/connectpos-package:$SPOS_API_VERSION \
   --no-update --ignore-platform-reqs
