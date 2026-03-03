@@ -43,6 +43,24 @@ chmod +x composer.phar
 # ===============================
 echo "====> Add ConnectPOS Composer Repository"
 
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-package
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-core
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-catalog
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-configuration
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-customer
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-marketing
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-payment
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-quote
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-sales
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-shipping
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-webhook
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-store-pickup
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-quotation
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-inventory
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-store-credit
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-reward-points
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-giftcard-integration
+
 $PHP_PATH $COMPOSER config repositories.connectpos \
   "{\"type\":\"composer\",\"url\":\"${CONNECTPOS_REPO_URL}\"}"
 
