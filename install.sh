@@ -60,6 +60,7 @@ $PHP_PATH $COMPOSER config --unset repositories.connectpos-module-inventory
 $PHP_PATH $COMPOSER config --unset repositories.connectpos-module-store-credit
 $PHP_PATH $COMPOSER config --unset repositories.connectpos-module-reward-points
 $PHP_PATH $COMPOSER config --unset repositories.connectpos-module-giftcard-integration
+$PHP_PATH $COMPOSER config --unset repositories.connectpos-module-aw-giftcard
 
 $PHP_PATH $COMPOSER config repositories.connectpos \
   "{\"type\":\"composer\",\"url\":\"${CONNECTPOS_REPO_URL}\"}"
