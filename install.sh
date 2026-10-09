@@ -7,7 +7,7 @@ set -euo pipefail
 PHP_PATH=$(command -v php)
 COMPOSER=composer.phar
 MEMORY_LIMIT="5G"
-SPOS_API_VERSION="26.08.07"
+SPOS_API_VERSION="26.10.08"
 CONNECTPOS_REPO_URL="https://repo.dev.connectpos.com"
 
 if [[ -z "$PHP_PATH" ]]; then
